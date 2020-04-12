@@ -69,7 +69,6 @@ const controller = {
 
         db.insertOne(User, contact, function(flag) {
             if (flag) {
-                console.log("ADDED");
                 res.render('partials/card', {name: contact.name, number: contact.number}, function (err, html) {
                     if (!err) res.send(html);
                 });

@@ -46,7 +46,6 @@ $(document).ready(function () {
             The name and the number fields are reset to empty values.
     */
     $('#submit').click(function () {
-        console.log("SUBMIT");
         var name = $('#name').val();
         var number = $('#number').val();
 
